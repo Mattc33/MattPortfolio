@@ -4,8 +4,12 @@ import styles from './Intro.module.scss'
 class Intro extends React.Component {
 
     public render() {
-        <div className={styles.introContainer}>
-        
-        </div>
+        return (
+            <div className={styles.introContainer}>
+                hi
+            </div>
+        )
     }
 }
+
+export default Intro

@@ -7,7 +7,7 @@ class TypedTitle extends React.Component {
     public render() {
         return (
             <div className={styles.typedTitleContainer}>
-                
+                hi
             </div>
         )
     }

@@ -1,9 +1,12 @@
-import styles from './ViewPortfolioBtn'
+import * as React from 'react'
+import styles from './ViewPortfolioBtn.module.scss'
 
-const ViewPortfolioBtn = (props) =>
+const ViewPortfolioBtn = (props: any) =>
     <button
         className={styles.viewPortfolioBtn}
-        onClick={this.props.scrollToPortfolio}
-    ></button>
+        onClick={props.scrollToPortfolio}
+    >
+        hi
+    </button>
 
 export default ViewPortfolioBtn

@@ -11,8 +11,11 @@ class Header extends React.Component {
     // ! Mobile
         // 
     public render() {
-        <header className={styles.headerContainer}>
-        </header>
+        return (
+            <header className={styles.headerContainer}>
+                hi
+            </header>
+        )
     }
 }
 
