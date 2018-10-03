@@ -1,0 +1,72 @@
+
+
+.introContainer {
+    min-width: 100%; min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    padding: 40px;
+
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    overflow: hidden;
+
+    // ======================================================================================
+    // * Stars Anmation
+    // ======================================================================================
+    $shadows-small:  multiple-box-shadow(700);
+    $shadows-medium: multiple-box-shadow(200);
+    $shadows-big:    multiple-box-shadow(100);
+
+    @function multiple-box-shadow ($n) {
+        $value: '#{random(2000)}px #{random(2000)}px #FFF';
+        @for $i from 2 through $n { 
+          $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF'
+        }
+        @return unquote($value)
+    }
+
+    .stars {
+        width: 1px;
+        height: 1px;
+        background: transparent;
+        box-shadow: $shadows-small;
+        animation: animStar 50s linear infinite;
+
+        &:after {
+            content: " ";
+            position: absolute;
+            top: 2000px;
+            width: 1px;
+            height: 1px;
+            background: transparent;
+            box-shadow: $shadows-small;
+        }
+    }
+
+    @keyframes animStar {
+        from {	
+            transform: translateY(0px)
+        }
+        to {
+            transform: translateY(-2000px)
+        }
+    }
+
+    .centralContainer {
+        margin: auto;
+        user-select: none;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 3px;
+
+        h1 {
+            color: #ffffff;
+            font-size: 3rem;
+
+            .name {
+                color: #00C957;
+            }
+        }
+
+
+    }
+
+}

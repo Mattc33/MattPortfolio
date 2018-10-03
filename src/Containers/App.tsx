@@ -1,11 +1,13 @@
 import * as React from 'react'
-import styles from './App.module.scss'
+// import styles from './App.module.scss'
+
+import Intro from './Intro/Intro'
 
 class App extends React.Component {
   public render() {
     return (
       <div className="App">
-          <h1 className={styles.title}>Welcome to React</h1>
+          <Intro />
       </div>
     );
   }

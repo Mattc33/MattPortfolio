@@ -6,7 +6,14 @@ class Intro extends React.Component {
     public render() {
         return (
             <div className={styles.introContainer}>
-                hi
+                <div className={styles.stars} />
+                <div className={styles.centralContainer}>
+                    <h1>Hello, I'm <span className={styles.name}>Matthew Chan</span>.</h1>
+                    <h1>Developer</h1>
+                    <h1>Designer</h1>
+                    <h1>Drinker of ☕</h1>
+                    {/* <ViewPortfolioBtn /> */}
+                </div>
             </div>
         )
     }
